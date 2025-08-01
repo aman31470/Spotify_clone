@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Circular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ /* or 700 for bold text */
+
+}
+
+body{
+    background: rgb(7, 7, 7);
+}
+
+.sidebar{
+    width: 300px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.137);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+}
+
+.sidebar-nav{
+    background: rgba(0, 0, 0, 0.704);
+    border-radius: 12px;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+}
+
+
+.sidebar-nav .logo{
+    margin-bottom: 12px;
+   
+}
+
+.sidebar-nav .logo a {
+    width: 100px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    left: 10px;
+}
+
+.sidebar-nav .logo a span{
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav ul li {
+    padding: 10px 15px;
+   
+}
+.sidebar-nav ul li a:hover {
+    
+    color: rgb(255, 255, 255);
+}
+.sidebar-nav ul li a {
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.742);
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.sidebar-nav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.create-playlist{
+    margin: 10px;
+    
+}
+
+.create-playlist .button{
+    border-radius: 10px;
+    background-color: red;
+}
+
+.lib:after {
+    content: '+';
+    float:right;
+    text-align: center;
+    
+    font-size: 25px;
+}
+
+.create-playlist{
+    background: rgba(32, 30, 30, 0.282);
+    padding: 30px 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar-scroll{
+height: 100px;
+overflow-y: auto;
+}
+
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 10px;
+}
+
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: rgb(213, 15, 15);
+    width: 10px;
+}
+
+.create-playlist h4{
+    font-size: 19px;
+    color: white;
+}
+.create-playlist p{
+    font-size: 12px;
+    color: white;
+    margin: 8px 0px;
+}
+.create-playlist button{
+    
+    border-radius: 12px;
+    background: white;
+    width: 110px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.privacy ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.455);
+    font-size: 10px;
+    margin: 0 6px;
+    font-weight: 300;
+}
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.186);
+}
+.privacy ul{
+    list-style:none;
+    margin-top: 10px;
+}
+
+.privacy ul li {
+    padding: 0 10px;
+    padding-bottom: 8px;
+}
+
+.language{
+    /* padding: 20px 30px;    */
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.language button{
+    border-radius: 10px;
+    height: 30px;
+    width: 50px;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border:  1px solid grey;
+    margin-bottom: 20px;
+   
+}
+
+.language button:hover{
+    border: 2px solid white;
+    transform: scale(1.2);
+}
+
+.main-section .top-nav {
+    background-color: red; /* change to red */
+}
+
+
+.main-section{
+    margin-left: 300px;
+    background: rgba(119, 115, 115, 0.188);
+    /* height: 100vh; */
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+
+.main-section .top-nav {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red; /* changed from black to red */
+}
+
+
+.main-section .top-nav .prev-btn button{
+    background: transparent;
+    height: 25px;
+    width: 30px;
+    border: 0;
+    outline: 0;
+}
+
+.main-section .top-nav .prev-btn button i{
+    color: rgba(255, 255, 255, 0.641);
+    font-size:22px;
+  
+}
+    
+.main-section .top-nav .login-btn button{
+    background: white;
+     border-radius: 15px;
+     height: 40px;
+     width: 80px;
+     margin-left: 30px;
+     
+}
+.main-section .top-nav .login-btn {
+    text-align: center;
+   display: flex;
+}
+
+
+.main-section .top-nav .login-btn .sign{
+    color: rgba(255, 255, 255, 0.395);
+    font-size: 20px;
+    margin-top: 8px;
+}
+.main-section .top-nav .login-btn .sign:hover{
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 20px;
+}
+
+.main-section .top-nav .login-btn button i{
+    color: black(255, 255, 255, 0.641);
+    font-size: 16px;
+    font-weight: 650;
+    margin: 15px;
+    text-align: center;
+}
+
+.main-section .top-nav{
+background-color: black;
+
+
+}
+
+.main-section .top-nav .login-btn button:hover{
+background: rgba(255, 255, 255, 0.712);
+
+}
+
+.spotify-playlist{
+    padding: 20px 10px;
+}
+.spotify-playlist h2{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .card{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 10px;
+   
+}
+
+.spotify-playlist .card .item{
+width: 200px;
+min-width: 140px;
+    
+    color: white;
+    background-color: black;
+     cursor: pointer;
+     border-radius: 6px;
+     padding: 5px;
+     
+}
+.spotify-playlist .card .item {
+  flex: 0 0 calc((100% - 80px) / 5); /* 5 items per row */
+}
+
+.spotify-playlist .card .item img{
+    width: 100%;
+    
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+v
+
+.spotify-playlist .card .item p{
+    color: rgba(255, 255, 255, 0.482);
+    font-size: 13px;
+}
+
+.spotify-playlist .card .item:hover{
+    background-color: rgba(0, 0, 0, 0.268);
+}
+
+.spotify-playlist .card .item .play-btn {
+position: relative;
+color: black;
+}
+
+.card-scroll {
+  scroll-behavior: smooth;
+}
+
+.card-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.card-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.spotify-playlist .card .item .play-btn i{
+background: rgb(9, 235, 9);
+position: absolute;
+border-radius: 50%;
+padding: 10px;
+right: 10px;
+top: -40px;
+opacity: 0;
+transform: 0.3s ease all;
+}
+.spotify-playlist .card .item:hover .play-btn i{
+opacity: 1;
+transform: translateY(-20px);
+}
+
+
+.footer-section{
+    padding: 20px 40px;
+
+}
+
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-section .footer .footer-links .footer-column
+{
+   margin: 0 12px;
+
+}
+
+.footer-section .footer .footer-links .footer-column{
+   color: white;
+}
+
+.footer-section .footer .footer-links .footer-column ul {
+   list-style: none;
+}
+
+.footer-section .footer .footer-links .footer-column ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.405);
+ 
+}
+
+.footer-section .footer .footer-links .footer-column ul a:hover {
+  text-decoration:underline;
+  color: white;
+}
+
+.footer-section .footer .footer-links .footer-column ul li {
+  margin:  15px 0;
+}
+
+.symbol i{
+    color: white;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+ 
+}
+
+.symbol i:hover{
+    color: rgba(255, 255, 255, 0.556);
+   transform: scale(1.2);
+}
+
+.footer-section .footer .footer-links .footer-column div{
+    font-weight: 700;
+}
+
+.footer-section .footer .footer-links .footer-column .col-links a{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2); /* soft white line */
+  margin: 30px 0px; /* top/bottom + left/right spacing */
+}
+
+.end p{
+    color: rgba(255, 255, 255, 0.529);
+    font-size: 14px;
+    margin-left: 15px;
+    padding-top: 35px;
+    padding-bottom: 65px;
+}
+
+.last{
+    background-color: red;
+    margin-top: 20px;
+    
+    margin-bottom: 10px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 40px;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+}
+
+.last .text{
+    color: white;
+   
+   margin-bottom: 15px;
+}
+.last .text p{
+    margin-top: 5px;
+    font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.last button{
+    padding: 8px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.last button:hover{
+    transform: scale(1.1);
+}
+
+

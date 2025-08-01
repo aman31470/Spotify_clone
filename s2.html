@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Albums Tab</title>
+  <link rel="stylesheet" href="s2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="spotify-albums">
+    <h2>Popular Albums</h2>
+
+    <div class="tabs">
+      <div class="tab active" onclick="openTab(event, 'tab1')">Trending</div>
+      <div class="tab" onclick="openTab(event, 'tab2')">Top Hits</div>
+      <div class="tab" onclick="openTab(event, 'tab3')">New Releases</div>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+      <div class="album-item">
+        <img src="d1.png" alt="Album 1" />
+        <h4>Kshama</h4>
+        <p>Seedhe Maut, Raftaar</p>
+      </div>
+      <div class="album-item">
+        <img src="d2.png" alt="Album 2" />
+        <h4>Maafi</h4>
+        <p>MC Stan, Emiway</p>
+      </div>
+      <div class="album-item">
+        <img src="d3.png" alt="Album 3" />
+        <h4>Luka Chipi</h4>
+        <p>Seedhe Maut</p>
+      </div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+      <div class="album-item">
+        <img src="d4.png" alt="Album 4" />
+        <h4>Mausam</h4>
+        <p>Anuv Jain</p>
+      </div>
+      <div class="album-item">
+        <img src="d5.png" alt="Album 5" />
+        <h4>Rain Songs</h4>
+        <p>Arijit Singh</p>
+      </div>
+    </div>
+
+    <div id="tab3" class="tab-content">
+      <div class="album-item">
+        <img src="s2.png" alt="Album 6" />
+        <h4>Saphire</h4>
+        <p>ED Shereen, Ajay-Atul</p>
+      </div>
+      <div class="album-item">
+        <img src="d11.png" alt="Album 7" />
+        <h4>Echo</h4>
+        <p>Atif Aslam</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      const tabContents = document.querySelectorAll('.tab-content');
+      const tabs = document.querySelectorAll('.tab');
+
+      tabContents.forEach(content => content.classList.remove('active'));
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
